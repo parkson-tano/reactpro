@@ -23,9 +23,9 @@ class Header extends Component {
   render() {
     return (
       <Jumbotron>
-        <Row className = 'justify-content-center'>
-            <Col variant = 'col-sm-12'>
-                      <Card style = { { width:'15rem'}}>
+        <Row>
+            <Col variant = 'col-sm-10'>
+                      <Card>
             <Card.Img
               variant="top"
               src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1567022175704"
@@ -43,7 +43,7 @@ class Header extends Component {
           </Card>
             </Col>
             <Col variant='col-3'>
-                      <Card style={{ width: "15rem" }}>
+                      <Card>
             <Card.Img
               variant="top"
               src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1567022175704"
@@ -61,7 +61,7 @@ class Header extends Component {
           </Card>
             </Col>
             <Col variant='col-3'>
-                      <Card style={{ width: "15rem" }}>
+                      <Card>
             <Card.Img
               variant="top"
               src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1567022175704"
@@ -79,7 +79,7 @@ class Header extends Component {
           </Card>
             </Col>
             <Col variant='col-3'>
-                      <Card style={{ width: "15rem" }}>
+                      <Card>
             <Card.Img
               variant="top"
               src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1567022175704"
@@ -96,24 +96,6 @@ class Header extends Component {
             </Card.Body>
           </Card>
             </Col>
-            <Col variant='col-3'>
-                      <Card style = { {width:'15rem'}}>
-            <Card.Img
-              variant="top"
-              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1567022175704"
-              alt="img"
-            />
-            <Card.Body>
-              <Card.Title>Iphone 7s</Card.Title>
-              <Card.Text>
-                <p>Uploaded by Daniel Tano</p>
-              </Card.Text>
-              <Button variant="info" onClick={this.updateContact}>
-                {this.state.contact}
-              </Button>
-            </Card.Body>
-          </Card>
-          </Col>
         </Row>
       </Jumbotron>
     );

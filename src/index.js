@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Header from './components/header';
-import Navi from './components/navbar';
+import NavBar from './components/navbar';
 import Details from './components/detail';
 import SideBar from './components/sidebar';
 import Footer from './components/footer';
@@ -15,7 +15,7 @@ class New extends React.Component {
   render() { 
     return ( 
       <div>
-      <Navi />
+      <NavBar />
       <Header />
 
       </div>

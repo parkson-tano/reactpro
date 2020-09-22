@@ -58,12 +58,12 @@ class NavBar extends React.Component {
     return (
       <Navbar bg="light" expand="lg" className="bas">
         <Navbar.Brand href="#"> {this.state.CompanyName} </Navbar.Brand>
-        <Form inline className="col-7 col-sm-9">
+        <Form inline className="col-2 col-sm-8">
           <InputGroup>
             <FormControl
               type="text"
               placeholder="search"
-              className="mr-sm-5"
+              className="mr-sm-4"
             />
             <Button type="submit" className="btn btn-primary">
               <span>
@@ -72,9 +72,9 @@ class NavBar extends React.Component {
             </Button>
           </InputGroup>
         </Form>
-        <Navbar.Toggle aria-controls="basic-navabar-nav mr-sm-5" />
-        <Navbar.Collapse  id="basic-navbar-nav" className="bas my-2 my-lg-0">
-          <Nav className="mr-sm-3" variant="outline-info">
+        <Navbar.Toggle aria-controls="basic-navabar-nav mr-sm-3" />
+        <Navbar.Collapse  id="basic-navbar-nav" className="bas my-0 my-lg-0">
+          <Nav className="mr-sm-2" variant="outline-info">
             <Nav.Item>
               <Nav.Link href="#loging" onClick= {this.log}> {this.state.user_Log} </Nav.Link>
             </Nav.Item>
@@ -88,9 +88,9 @@ class NavBar extends React.Component {
               <Nav.Link href="#pro"> {this.state.profile} </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#cart" className="mr-2" onClick={this.cartUpdate}>
+              <Nav.Link href="#cart" className="mr-0" onClick={this.cartUpdate}>
                 <FontAwesomeIcon icon={faShoppingCart} />
-                Cart
+            
                 <Badge variant="primary">{this.state.cart_sta}</Badge>
               </Nav.Link>
             </Nav.Item>
