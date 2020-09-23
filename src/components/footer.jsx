@@ -4,7 +4,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 class Footer extends Component {
     state = {  }
     render() { 
-        return ( <h1>footer</h1> );
+        return ( 
+            <div className='fixed-bottom'>
+                <h3>hello there</h3>
+            </div>
+         );
     }
 }
  

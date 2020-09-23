@@ -1,33 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom'
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Header from './components/header';
-import NavBar from './components/navbar';
-import Details from './components/detail';
-import SideBar from './components/sidebar';
-import Footer from './components/footer';
-import Content from './components/content'
-
-class New extends React.Component {
-  state = {  }
-  render() { 
-    return ( 
-      <div>
-      <NavBar />
-      <Header />
-
-      </div>
-
-     );
-  }
-}
-
 
 
 ReactDOM.render(
-<New />,
+  <Router>
+    <App />
+  </Router>
+,
   document.getElementById('root')
 );
 
