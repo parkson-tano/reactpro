@@ -3,7 +3,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
-import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import ProductList from "./components/productlist";
 import NavBar from "./components/navbar";

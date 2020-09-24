@@ -6,7 +6,9 @@ class Footer extends Component {
     render() { 
         return ( 
             <div className='fixed-bottom'>
-                <h3>hello there</h3>
+                <footer>
+                    footer things
+                </footer>
             </div>
          );
     }
